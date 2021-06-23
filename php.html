@@ -1,44 +1,18 @@
+<!DOCTYPE html>
 <html>
 <body>
 
-<head>
-<title>Export Booking Excel to Coprar Converter</title>
-</head>
+<h2>HTML Forms</h2>
 
-<h2>Export Booking Excel to Corprar Converter</h2>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
 
-<?php
-echo "Receiver Code:";
-?> 
-
-<form>
-	<input type="text" placeholder="RECEIVER">
-</form>
-
-<?php
-echo "Please change before file select. <br>";
-echo "<br>Callsign Code:";
-?>
-
-<form>
-	<input type="text" placeholder="XXXXX">
-</form>
-
-<?php
-echo "Please change before file select. <br>";
-echo "<br>Export booking excel file:";
-?>
-
-<form action="upload.php" method="POST" enctype="multipart/form-data">
-	<input type="file" name="file"><br>
-    <a href="sample.xlsx">Sample Excel</a>
-</form>
-
-<textarea class="form-control" rows="20" cols="40">
-</textarea>
-
-
-	
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
 </body>
 </html>
